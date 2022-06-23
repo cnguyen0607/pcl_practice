@@ -1,0 +1,17 @@
+<launch>
+	<!-- Pcl Tutorial Package launch file -->
+	<node pkg="pcl_tutorial" type="pcl_tut" name="pcl_tutorial_cloud" output="screen">
+
+    <param name="z_min_filter_limit" type="double" value="0.0" />
+    <param name="z_max_filter_limit" type="double" value="1.0" />
+    <param name="distanceThreshold" type="double" value="10" />
+    <param name="filterFieldName" type="str" value="z" />
+    <param name="pointColorThreshold" type="double" value="6" />
+    <param name="regionColorThreshold" type="double" value="5" />
+    <param name="minClusterSize" type="double" value="600" />
+    <param name="leafSizeX" type="double" value="0.05" />
+    <param name="leafSizeY" type="double" value="0.05" />
+    <param name="leafSizeZ" type="double" value="0.05" />
+
+    </node>
+</launch>
